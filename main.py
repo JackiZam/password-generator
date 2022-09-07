@@ -13,7 +13,7 @@ def main():
   passNums = random.choices(listNums, k=desiredNumAmt)
 
 # print final password
-  finalPass = str(passWord) + str(passNums)
+  finalPass = str(passWord) + str("".join(passNums))
   print(finalPass)
 
 main()
